@@ -1,0 +1,24 @@
+CARPETA DE IMAGENES - ILVA 360
+
+Esta carpeta debe llamarse "images" y estar JUNTO a index.html:
+
+  ilva360/
+   |- index.html
+   |- styles.css
+   |- script.js
+   |- images/   <- aqui van las fotos
+
+Ya incluye imagenes de reemplazo (.svg). Para usar tus fotos reales, guardalas aqui
+con el MISMO nombre y la extension que tengas (.png, .jpg, .jpeg o .webp). Tu foto
+tiene prioridad sobre la de reemplazo. Usa minusculas, sin espacios ni tildes.
+
+hero            -> portada (varios productos juntos)
+banner          -> banner rosado "Recoge sin filas"
+yogurt-200ml, yogurt-1l, yogurt-1-5l, yogurt-probiotico
+leche-entera, leche-uht, leche-deslactozada
+chicotron, ilfrut-200ml, ilfrut-1l, queso-edam, paneton
+
+Ejemplo: yogurt-1l.jpg  o  yogurt-1l.png
+
+Si una foto no aparece: abre la consola del navegador (F12) y veras un aviso
+con el nombre exacto que busca.

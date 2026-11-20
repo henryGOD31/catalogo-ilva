@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ILVA 360 | Lácteos frescos del Valle Alto</title>
+<meta name="description" content="ILVA (Industria de Lácteos del Valle Alto): leche, yogurt, jugos, queso y más. Compra en línea o recoge en ILVA Express.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header" id="header">
+  <a href="#inicio" class="logo">ilva360</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav class="nav" id="nav">
+    <a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#donde-comprar">Dónde comprar</a><a href="#contacto">Contacto</a>
+  </nav>
+  <div class="h-actions">
+    <button class="bag" id="openCart" aria-label="Abrir carrito">🛍️<span id="cartCount">0</span></button>
+    <a class="btn yellow" href="#productos">Pedir ahora</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">✦</span>
+  <div class="hero-text">
+    <h1><span>Frescura</span><span class="pk">del Valle</span></h1>
+    <h2>Lácteos del Valle Alto,<br>directo a tu mesa.</h2>
+    <p>Productos frescos, nutritivos y de la más alta calidad, elaborados junto a productores locales.</p>
+    <a class="btn pink" href="#productos">Ver productos <span class="circ">↗</span></a>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <i class="blob b-yellow"></i><i class="blob b-lilac"></i>
+    <div class="hero-img" id="heroImg"></div>
+    <div class="fcard fc1"><span>🌿</span><b>100%</b>Productores locales</div>
+    <div class="fcard fc2"><span>❄️</span><b>Fresco</b>todos los días</div>
+  </div>
+</section>
+
+<section class="section" id="favoritos">
+  <div class="head-row">
+    <h2 class="ttl reveal"><span>Los favoritos</span><b>ILVA</b></h2>
+    <div class="arrows"><button id="prevF" aria-label="Anterior">‹</button><button id="nextF" aria-label="Siguiente">›</button></div>
+  </div>
+  <div class="track" id="favTrack"></div>
+</section>
+
+<section class="banner reveal">
+  <div><h2>¡Recoge sin filas!</h2><p>Elige tu punto ILVA Express en Cochabamba y retira tu pedido.</p><a class="btn dark" href="#donde-comprar">Ver puntos <span class="circ">↗</span></a></div>
+  <div class="banner-img" id="bannerImg"></div>
+</section>
+
+<section class="section" id="productos">
+  <h2 class="ttl reveal"><span>Nuestros</span><b>Productos</b></h2>
+  <p class="sub">Precios en bolivianos (Bs). Elige la presentación y agrégala al carrito.</p>
+  <div class="tools">
+    <input type="search" id="search" placeholder="Buscar producto…" aria-label="Buscar producto">
+    <select id="sort" aria-label="Ordenar"><option value="">Ordenar</option><option value="asc">Precio: menor a mayor</option><option value="desc">Precio: mayor a menor</option></select>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="section purple" id="nosotros">
+  <h2 class="ttl light reveal"><span>Acerca de</span><b>Nosotros</b></h2>
+  <div class="about">
+    <div class="about-text reveal">
+      <p>En ILVA (Industria de Lácteos del Valle Alto), nos dedicamos a transformar lo mejor de nuestra tierra en productos lácteos frescos, nutritivos y de la más alta calidad. Nacimos con el compromiso de impulsar el desarrollo productivo del Valle Alto, trabajando de la mano con productores locales para llevar el sabor auténtico y natural del campo directamente a la mesa de las familias.</p>
+      <p>Combinamos tradición ganadera con procesos modernos y estrictos estándares de inocuidad alimentaria. Cada uno de nuestros productos refleja nuestra pasión por la excelencia, el respeto por el origen y la dedicación por ofrecer alimentos saludables que acompañan el bienestar diario de nuestros consumidores.</p>
+    </div>
+    <div class="essence">
+      <h3>Nuestra esencia</h3>
+      <div class="ess reveal"><span>🥛</span><div><b>Calidad y frescura</b><p>Materia prima seleccionada diariamente de las cuencas lecheras del Valle Alto.</p></div></div>
+      <div class="ess reveal"><span>🌿</span><div><b>Compromiso local</b><p>Apoyo directo al crecimiento de los productores y la economía regional.</p></div></div>
+      <div class="ess reveal"><span>✔️</span><div><b>Confianza</b><p>Procesos certificados que garantizan nutrición y sabor en cada envase.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="donde-comprar">
+  <h2 class="ttl reveal"><span>Dónde</span><b>Comprar</b></h2>
+  <p class="sub">Nuestra planta industrial y puntos ILVA Express. Para garantizar la máxima frescura desde el origen hasta tu hogar, contamos con infraestructura propia en el corazón productor de Cochabamba y puntos de distribución directa al consumidor.</p>
+  <div class="places">
+    <article class="place reveal"><span class="ico">🏭</span><h3>Planta Industrial (Fábrica Central)</h3><p>Ubicada en el municipio de Punata (Av. Libertadores Nro. 464, Zona Mirabel), epicentro de la cuenca lechera del Valle Alto. Aquí acopiamos diariamente la materia prima de productores asociados de la región y la procesamos bajo estrictos estándares de calidad e inocuidad.</p></article>
+    <article class="place reveal"><span class="ico">🛍️</span><h3>Bodegas ILVA Express</h3><p>Nuestros puntos de venta directa y distribución rápida, diseñados para acercar toda nuestra línea de productos frescos (leche fluida, yogures, quesos y derivados) directamente a las familias y comercios, asegurando precios justos y cadena de frío garantizada.</p></article>
+  </div>
+  <div class="ex-head"><span class="badge">Cochabamba</span><h3>ILVA Express <small>Puntos de recojo</small></h3><p>Tu pedido listo en 15 minutos. Selecciona tu punto y recoge sin filas.</p></div>
+  <div class="ex-tools"><input type="search" id="exSearch" placeholder="Buscar por zona, avenida o producto…" aria-label="Buscar punto"><div class="chips" id="exZones"></div></div>
+  <div class="split">
+    <div class="ex-list" id="exList"></div>
+    <div class="ex-map"><svg id="exMap" viewBox="0 0 900 520" role="img" aria-label="Mapa estilizado de Cochabamba con los puntos ILVA Express"></svg><div class="ex-detail" id="exDetail"></div></div>
+  </div>
+</section>
+
+<section class="section purple" id="contacto">
+  <h2 class="ttl light reveal"><span>Contáctanos</span><b>ILVA</b></h2>
+  <div class="contact">
+    <form id="contactForm" novalidate>
+      <label>Nombre<input name="nombre" required></label>
+      <label>Correo<input type="email" name="correo" required></label>
+      <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+      <button class="btn pink" type="submit">Enviar por WhatsApp <span class="circ">↗</span></button>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </form>
+    <div class="info">
+      <h3>Datos de contacto</h3>
+      <p><b>Planta Punata</b><br>Av. Libertadores Nro. 464, Zona Mirabel, Punata - Cochabamba.</p>
+      <p><b>Teléfonos / WhatsApp</b><br><a href="tel:+59144577003">(+591-4) 4577003</a><br><a href="https://wa.me/59170346043" target="_blank" rel="noopener">(+591) 70346043</a><br><a href="https://wa.me/59161796045" target="_blank" rel="noopener">(+591) 61796045</a></p>
+      <p><b>Correo comercial</b><br><a href="mailto:comercial@ilvabolivia.com">comercial@ilvabolivia.com</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="logo">ilva360</div><p>Industria de Lácteos del Valle Alto · © 2026 Todos los derechos reservados.</p></footer>
+
+<a class="wa" href="https://wa.me/59170346043" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">💬</a>
+<button class="totop" id="toTop" aria-label="Subir">↑</button>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Carrito">
+  <div class="drawer-head"><h3>Tu carrito</h3><button id="closeCart" aria-label="Cerrar">✕</button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot"><div class="total"><span>Total</span><b id="cartTotal">Bs 0.00</b></div><button class="btn pink full" id="checkoutBtn">Ir a pagar</button><button class="clear" id="clearCart">Vaciar carrito</button></div>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modal-box" id="modalBox"></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script>function emoji(e){var s=document.createElement("span");s.className="em";s.textContent=e;return s}</script>
+<script src="script.js"></script>
+</body>
+</html>
